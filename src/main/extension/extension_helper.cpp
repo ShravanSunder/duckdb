@@ -119,6 +119,7 @@ static const DefaultExtension internal_extensions[] = {
     {"azure", "Adds a filesystem abstraction for Azure blob storage to DuckDB", false},
     {"iceberg", "Adds support for Apache Iceberg", false},
     {"vss", "Adds indexing support to accelerate Vector Similarity Search", false},
+    {"lm_diskann", "Add lm_diskann index extension for vector similarity search", false},
     {"delta", "Adds support for Delta Lake", false},
     {"fts", "Adds support for Full-Text Search Indexes", false},
     {"ui", "Adds local UI for DuckDB", false},
