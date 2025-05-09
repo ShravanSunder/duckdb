@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5...3.29)
 
-add_compile_options(-Wno-deprecated-literal-operator)
+if (NOT MSVC)
+    add_compile_options(-Wno-deprecated-literal-operator)
+endif()
 
 if(NOT CLANG_TIDY)
   find_package(Python3)
